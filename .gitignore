@@ -1,0 +1,25 @@
+# Ignore build output
+/target/
+
+# Ignore build output
+/test-output/
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore Maven dependencies
+/.m2/
+
+# Ignore Gradle dependencies
+/.gradle/
+
+# Ignore Eclipse project files
+.classpath
+.project
+.settings/
+
+# Ignore IntelliJ project files
+*.iml
+*.ipr
+*.iws

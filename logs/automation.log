@@ -79,3 +79,15 @@
 15:11:28.043 [main] INFO  api.test.EmployeeTest - ********** Reading User Info ***************
 15:11:29.224 [main] INFO  api.test.EmployeeTest - **********User info  is displayed ***************
 15:11:29.239 [main] INFO  api.test.EmployeeTest - ********** Creating user  ***************
+15:29:43.292 [main] DEBUG api.test.UserTests - debugging.....
+15:29:43.307 [main] INFO  api.test.UserTests - ********** Creating user  ***************
+15:29:46.014 [main] INFO  api.test.UserTests - **********User is creatged  ***************
+15:29:46.022 [main] INFO  api.test.UserTests - ********** Reading User Info ***************
+15:29:47.225 [main] INFO  api.test.UserTests - **********User info  is displayed ***************
+15:29:47.227 [main] INFO  api.test.UserTests - ********** Updating User ***************
+15:29:48.470 [main] INFO  api.test.UserTests - ********** User updated ***************
+15:29:49.682 [main] INFO  api.test.UserTests - **********   Deleting User  ***************
+15:29:50.880 [main] INFO  api.test.UserTests - ********** User deleted ***************
+15:29:52.182 [main] INFO  api.test.EmployeeTest - ********** Reading User Info ***************
+15:29:53.217 [main] INFO  api.test.EmployeeTest - **********User info  is displayed ***************
+15:29:53.218 [main] INFO  api.test.EmployeeTest - ********** Creating user  ***************

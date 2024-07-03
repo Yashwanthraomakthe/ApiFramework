@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.EmployeeTest" class="method navigator-link" hash-for-method="testPostEmployee">testPostEmployee</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +118,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="api.test.UserTests" class="method navigator-link" hash-for-method="testDeleteUserByName">testDeleteUserByName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.EmployeeTest" class="method navigator-link" hash-for-method="testGetEmployees">testGetEmployees</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -121,6 +140,11 @@
                         <a href="#" panel-name="suite-Suite" title="api.test.UserTests" class="method navigator-link" hash-for-method="testUpdateUserByName">testUpdateUserByName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.OpenWeatherMapAPI" class="method navigator-link" hash-for-method="testWeatherDetailsOfHyderabad">testWeatherDetailsOfHyderabad</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -133,6 +157,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">api.test.EmployeeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPostEmployee">
+                  </a> <!-- testPostEmployee -->
+                  <span class="method-name">testPostEmployee</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [429]
+	at api.test.EmployeeTest.testPostEmployee(EmployeeTest.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -169,6 +213,36 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.EmployeeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetEmployees">
+                  </a> <!-- testGetEmployees -->
+                  <span class="method-name">testGetEmployees</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.OpenWeatherMapAPI</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWeatherDetailsOfHyderabad">
+                  </a> <!-- testWeatherDetailsOfHyderabad -->
+                  <span class="method-name">testWeatherDetailsOfHyderabad</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -184,7 +258,10 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;api.test.PetTests&quot;/&gt;
       &lt;class name=&quot;api.test.UserTests&quot;/&gt;
+      &lt;class name=&quot;api.test.OpenWeatherMapAPI&quot;/&gt;
+      &lt;class name=&quot;api.test.EmployeeTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -198,7 +275,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -224,28 +301,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testUpdateUserByName')
+data.setCell(0, 1, 'testPostUser')
 data.setCell(0, 2, 'api.test.UserTests')
-data.setCell(0, 3, 2506);
+data.setCell(0, 3, 2709);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testPostUser')
+data.setCell(1, 1, 'testUpdateUserByName')
 data.setCell(1, 2, 'api.test.UserTests')
-data.setCell(1, 3, 2458);
+data.setCell(1, 3, 2455);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testGetUserByName')
-data.setCell(2, 2, 'api.test.UserTests')
-data.setCell(2, 3, 1186);
+data.setCell(2, 1, 'testWeatherDetailsOfHyderabad')
+data.setCell(2, 2, 'api.test.OpenWeatherMapAPI')
+data.setCell(2, 3, 1273);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testDeleteUserByName')
+data.setCell(3, 1, 'testGetUserByName')
 data.setCell(3, 2, 'api.test.UserTests')
-data.setCell(3, 3, 1184);
+data.setCell(3, 3, 1203);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testDeleteUserByName')
+data.setCell(4, 2, 'api.test.UserTests')
+data.setCell(4, 3, 1198);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testGetEmployees')
+data.setCell(5, 2, 'api.test.EmployeeTest')
+data.setCell(5, 3, 1036);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testPostEmployee')
+data.setCell(6, 2, 'api.test.EmployeeTest')
+data.setCell(6, 3, 886);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -260,13 +349,33 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">api.test.UserTests</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">testGetUsersTask03</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">api.test.PetTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testPostPet</span>
+                <br/>
+                <span class="ignored-method-name">testGetPetByID</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">api.test.EmployeeTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testDeleteUserByName</span>
+                <br/>
+                <span class="ignored-method-name">testUpdateUserByName</span>
+                <br/>
+                <span class="ignored-method-name">testGetEmployeeByName</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -285,19 +394,43 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testPostUser</span>
-                <span class="method-start">502 ms</span>
+                <span class="method-start">682 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetUserByName</span>
-                <span class="method-start">2968 ms</span>
+                <span class="method-start">3398 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testUpdateUserByName</span>
-                <span class="method-start">4155 ms</span>
+                <span class="method-start">4602 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDeleteUserByName</span>
-                <span class="method-start">6662 ms</span>
+                <span class="method-start">7058 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.OpenWeatherMapAPI</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testWeatherDetailsOfHyderabad</span>
+                <span class="method-start">8257 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.EmployeeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">9531 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testGetEmployees</span>
+                <span class="method-start">9557 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testPostEmployee</span>
+                <span class="method-start">10594 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
