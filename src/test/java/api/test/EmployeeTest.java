@@ -28,10 +28,8 @@ public class EmployeeTest {
 	public void setup()
 	{
 		faker=new Faker();
-		employeePayload=new Employee();
+		employeePayload=new Employee();		
 		
-		//employeePayload.setId(faker.idNumber().hashCode());
-		//employeePayload.setId();
 		employeePayload.setEmployee_name(faker.name().firstName());
 		employeePayload.setEmployee_salary("50000");
 		employeePayload.setEmployee_age("25");
@@ -47,7 +45,7 @@ public class EmployeeTest {
 	@Test(priority=1, enabled =true)
 	public void testGetEmployees()
 	{
-		logger.info("********** Reading User Info ***************");
+		logger.info("********** Reading Employee Info ***************");
 		
 		Response response=EmployeeEndPoints.readEmployees();
 		response.then().log().all();
@@ -62,14 +60,14 @@ public class EmployeeTest {
 	
 
 		
-		logger.info("**********User info  is displayed ***************");
+		logger.info("**********Employee info  is displayed ***************");
 		
 	}
 	
 	@Test(priority=2, enabled =true)
 	public void testPostEmployee()
 	{
-		logger.info("********** Creating user  ***************");
+		logger.info("********** Creating Employee  ***************");
 		Response response=EmployeeEndPoints.createEmployee(employeePayload);
 		response.then().log().all();		
 		
@@ -80,27 +78,27 @@ public class EmployeeTest {
         
         Assert.assertEquals(employeeCountAfterPost, employeeIntialCount+1);
 		
-		logger.info("**********User is creatged  ***************");
+		logger.info("**********Employee is creatged  ***************");
 			
 	}
 	
 	@Test(priority=2, enabled =false)
 	public void testGetEmployeeByName()
 	{
-		logger.info("********** Reading User Info ***************");
+		logger.info("********** Reading Employee Info ***************");
 		
 		Response response=EmployeeEndPoints.readEmployee(this.employeePayload.getEmployee_name());
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(),200);
 		
-		logger.info("**********User info  is displayed ***************");
+		logger.info("**********Employee info  is displayed ***************");
 		
 	}
 	
 	@Test(priority=3, enabled =false)
 	public void testUpdateUserByName()
 	{
-		logger.info("********** Updating User ***************");
+		logger.info("********** Updating Employee ***************");
 		
 		//update data using payload
 		employeePayload.setEmployee_name(faker.name().firstName());

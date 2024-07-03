@@ -37,13 +37,13 @@ public class PetEndPoints {
 		}
 		
 		
-		public static Response updatePet(String petName, User payload)
+		public static Response updatePet(String petName, Pet petPayload)
 		{
 			Response response=given()
 				.contentType(ContentType.JSON)
 				.accept(ContentType.JSON)
 				.pathParam("petname", petName)
-				.body(payload)
+				.body(petPayload)
 			.when()
 				.put(Routes.petupdate_url);
 				
@@ -51,10 +51,10 @@ public class PetEndPoints {
 		}
 		
 		
-		public static Response deletePet(String petName)
+		public static Response deletePet(int i)
 		{
 			Response response=given()
-							.pathParam("petname",petName)
+							.pathParam("petname",i)
 			.when()
 				.delete(Routes.petdelete_url);
 				

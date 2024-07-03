@@ -11,7 +11,8 @@
       <class name="api.test.PetTests"/>
       <class name="api.test.UserTests"/>
       <class name="api.test.OpenWeatherMapAPI"/>
-      <class name="api.test.EmployeeTest"/>
+      <class name="api.test.JiraAPI"/>
+     <!-- <class name="api.test.EmployeeTest"/>--> 
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

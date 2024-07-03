@@ -23,9 +23,8 @@ public class PetTests {
 	@BeforeClass
 	public void setup() {
 
-		
 		petPayload = new Pet();
-		
+
 		PetCategory category = new PetCategory();
 		category.setId(1);
 		category.setName("dog");
@@ -41,8 +40,6 @@ public class PetTests {
 		petPayload.setTags(Arrays.asList(tag));
 		petPayload.setStatus("pending");
 
-				
-
 		// logs
 		logger = LogManager.getLogger(this.getClass());
 
@@ -50,7 +47,7 @@ public class PetTests {
 
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void testPostPet() {
 		logger.info("********** Creating pet  ***************");
 		Response response = PetEndPoints.createPet(petPayload);
@@ -58,58 +55,23 @@ public class PetTests {
 
 		Assert.assertEquals(response.getStatusCode(), 200);
 
-		logger.info("**********User is creatged  ***************");
+		logger.info("**********pet is creatged  ***************");
 
 	}
 
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2, enabled = true)
 	public void testGetPetByID() {
-		logger.info("********** Reading User Info ***************");
-		
+		logger.info("********** Reading pet Info ***************");
+
 		Response response = PetEndPoints.readPet(this.petPayload.getId());
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
 		Assert.assertEquals(response.contentType(), "application/json");
 		Assert.assertEquals(response.path("name"), "snoopie");
 		Assert.assertEquals(response.path("status"), "pending");
-		
 
-		logger.info("**********User info  is displayed ***************");
+		logger.info("**********pet info  is displayed ***************");
 
-	}	
-	
-	
-	
-
-	//@Test(priority = 3, enabled = false)
-	public void testUpdateUserByName() {
-		logger.info("********** Updating User ***************");
-
-		// update data using payload
-		// userPayload.setFirstName(faker.name().firstName());
-		// userPayload.setLastName(faker.name().lastName());
-		// userPayload.setEmail(faker.internet().safeEmailAddress());
-
-		//Response response = UserEndPoints.updateUser(this.userPayload.getUsername(), userPayload);
-		//response.then().log().body();
-
-		//Assert.assertEquals(response.getStatusCode(), 200);
-
-		logger.info("********** User updated ***************");
-		// Checking data after update
-		//Response responseAfterupdate = UserEndPoints.readUser(this.userPayload.getUsername());
-		//Assert.assertEquals(responseAfterupdate.getStatusCode(), 200);
-
-	}
-
-	//@Test(priority = 4, enabled = false)
-	public void testDeleteUserByName() {
-		logger.info("**********   Deleting User  ***************");
-
-		//Response response = UserEndPoints.deleteUser(this.userPayload.getUsername());
-		//Assert.assertEquals(response.getStatusCode(), 200);
-
-		logger.info("********** User deleted ***************");
 	}
 
 }

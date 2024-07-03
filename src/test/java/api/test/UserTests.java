@@ -36,9 +36,7 @@ public class UserTests {
 		userPayload.setPhone(faker.phoneNumber().cellPhone());
 
 		// logs
-		logger = LogManager.getLogger(this.getClass());
-
-		logger.debug("debugging.....");
+		logger = LogManager.getLogger(this.getClass());		
 
 	}
 
@@ -98,7 +96,7 @@ public class UserTests {
 		logger.info("********** User deleted ***************");
 	}
 
-	@Test(priority = 5, enabled = false)
+	@Test(priority = 5, enabled = true)
 	public void testGetUsersTask03() {
 		logger.info("********** Reading User Info ***************");
 

@@ -1,18 +1,18 @@
 # Ignore build output
-/target/
+/target/*
 
 # Ignore build output
-/test-output/
+/test-output/*
 
 # Ignore IDE files
-.idea/
-.vscode/
+.idea/*
+.vscode/*
 
 # Ignore Maven dependencies
-/.m2/
+/.m2/*
 
 # Ignore Gradle dependencies
-/.gradle/
+/.gradle/*
 
 # Ignore Eclipse project files
 .classpath
