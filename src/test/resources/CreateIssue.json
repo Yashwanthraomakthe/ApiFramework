@@ -1,0 +1,18 @@
+{
+"fields": {
+	"assignee": {
+	 "id": "347fee8e-a95c-4f61-b2d2-8bad71f49a63"
+	},
+"issuetype": {
+  "name":"Bug"
+},
+"project":{
+  "key": "KAN"
+},
+"reporter": {
+  "id": "347fee8e-a95c-4f61-b2d2-8bad71f49a63"
+},
+"summary": "Main order flow broken"
+},
+"update": {}
+}

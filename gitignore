@@ -1,0 +1,6 @@
+/target/
+/test-output/
+/CucumberReports/
+/reports/
+.project
+.settings/org.eclipse.jdt.core.prefs
