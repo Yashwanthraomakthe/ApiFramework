@@ -13,3 +13,48 @@
 21:42:14.255 [main] INFO  api.test.UserTests - ********** User deleted ***************
 21:42:14.258 [main] INFO  api.test.UserTests - ********** Reading User Info ***************
 21:42:15.281 [main] INFO  api.test.UserTests - **********User info  is displayed ***************
+16:31:30.080 [main] DEBUG api.test.PetTests - debugging.....
+16:31:30.090 [main] INFO  api.test.PetTests - ********** Creating pet  ***************
+16:31:32.838 [main] INFO  api.test.PetTests - **********pet is creatged  ***************
+16:31:32.842 [main] INFO  api.test.PetTests - ********** Reading pet Info ***************
+16:31:34.631 [main] INFO  api.test.PetTests - **********pet info  is displayed ***************
+16:31:42.629 [main] INFO  api.test.UserTests - ********** Creating user  ***************
+16:31:44.982 [main] INFO  api.test.UserTests - **********User is creatged  ***************
+16:31:44.987 [main] INFO  api.test.UserTests - ********** Reading User Info ***************
+16:31:46.389 [main] INFO  api.test.UserTests - **********User info  is displayed ***************
+16:31:46.408 [main] INFO  api.test.UserTests - ********** Updating User ***************
+16:31:47.749 [main] INFO  api.test.UserTests - ********** User updated ***************
+16:31:48.982 [main] INFO  api.test.UserTests - **********   Deleting User  ***************
+16:31:50.327 [main] INFO  api.test.UserTests - ********** User deleted ***************
+16:31:50.342 [main] INFO  api.test.UserTests - ********** Reading User Info ***************
+16:31:51.491 [main] INFO  api.test.UserTests - **********User info  is displayed ***************
+16:32:01.883 [main] DEBUG api.test.PetTests - debugging.....
+16:32:01.894 [main] INFO  api.test.PetTests - ********** Creating pet  ***************
+16:32:04.450 [main] INFO  api.test.PetTests - **********pet is creatged  ***************
+16:32:04.468 [main] INFO  api.test.PetTests - ********** Reading pet Info ***************
+16:32:06.190 [main] INFO  api.test.PetTests - **********pet info  is displayed ***************
+16:32:06.386 [main] INFO  api.test.UserTests - ********** Creating user  ***************
+16:32:07.729 [main] INFO  api.test.UserTests - **********User is creatged  ***************
+16:32:07.737 [main] INFO  api.test.UserTests - ********** Reading User Info ***************
+16:32:09.078 [main] INFO  api.test.UserTests - **********User info  is displayed ***************
+16:32:09.090 [main] INFO  api.test.UserTests - ********** Updating User ***************
+16:32:10.406 [main] INFO  api.test.UserTests - ********** User updated ***************
+16:32:11.699 [main] INFO  api.test.UserTests - **********   Deleting User  ***************
+16:32:13.075 [main] INFO  api.test.UserTests - ********** User deleted ***************
+16:32:13.112 [main] INFO  api.test.UserTests - ********** Reading User Info ***************
+16:32:13.692 [main] INFO  api.test.UserTests - **********User info  is displayed ***************
+16:34:05.869 [main] DEBUG api.test.PetTests - debugging.....
+16:34:05.878 [main] INFO  api.test.PetTests - ********** Creating pet  ***************
+16:34:08.546 [main] INFO  api.test.PetTests - **********pet is creatged  ***************
+16:34:08.554 [main] INFO  api.test.PetTests - ********** Reading pet Info ***************
+16:34:10.422 [main] INFO  api.test.PetTests - **********pet info  is displayed ***************
+16:34:10.558 [main] INFO  api.test.UserTests - ********** Creating user  ***************
+16:34:11.820 [main] INFO  api.test.UserTests - **********User is creatged  ***************
+16:34:11.822 [main] INFO  api.test.UserTests - ********** Reading User Info ***************
+16:34:13.156 [main] INFO  api.test.UserTests - **********User info  is displayed ***************
+16:34:13.158 [main] INFO  api.test.UserTests - ********** Updating User ***************
+16:34:14.544 [main] INFO  api.test.UserTests - ********** User updated ***************
+16:34:15.881 [main] INFO  api.test.UserTests - **********   Deleting User  ***************
+16:34:17.175 [main] INFO  api.test.UserTests - ********** User deleted ***************
+16:34:17.193 [main] INFO  api.test.UserTests - ********** Reading User Info ***************
+16:34:17.770 [main] INFO  api.test.UserTests - **********User info  is displayed ***************
